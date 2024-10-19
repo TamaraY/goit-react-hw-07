@@ -5,6 +5,8 @@ import { store } from "./redux/store";
 import App from "./App";
 import "./index.css";
 
+import "react-toastify/dist/ReactToastify.css";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>

@@ -2,6 +2,9 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import ContactList from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchContacts } from "./redux/contactsOps";
@@ -19,6 +22,7 @@ const App = () => {
       <ContactForm />
       <SearchBox />
       <ContactList />
+      <ToastContainer />
     </div>
   );
 };
